@@ -9,3 +9,7 @@ module.exports = {
   admin: admin,
   normal: normalUser,
 }
+
+module.exports = function() {
+  // run
+};
