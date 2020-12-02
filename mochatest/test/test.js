@@ -3,6 +3,7 @@ const Mocha = require('mocha');
 
 const rootTest = new Mocha();
 
+// use
 // npm test ping/ping_test.js
 // npm test ping
 

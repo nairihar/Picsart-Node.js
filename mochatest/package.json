@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server",
-    "test": "mocha"
+    "test": "node test/test.js",
+    "test:auth": "node test/test.js auth",
+    "test:full": "npm run test:auth && npm test"
   },
   "keywords": [],
   "author": "",
