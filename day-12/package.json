@@ -1,0 +1,20 @@
+{
+  "name": "migrate",
+  "version": "1.0.0",
+  "description": "migrate db  to latest",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "setup": "node src/setup-db.js"
+  },
+  "author": "David Vardanian",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "dotenv": "^8.2.0",
+    "fs-extra": "^9.0.1",
+    "mysql2": "^2.2.5",
+    "path": "^0.12.7"
+  }
+}
