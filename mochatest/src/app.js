@@ -1,11 +1,13 @@
 const express = require('express')
+const morgan = require('morgan')
 const app = express()
 
 // delete require.cache[path.resolve('...')]
 
-app.get('/', (req, res) => {
+app.use(morgan('dev'))
 
-  res.send('Hello World!')
+app.get('/', (req, res) => {
+  res.send(`${Date.now()} : ${process.env.PORT}`)
 });
 
 module.exports = app;
